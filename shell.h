@@ -41,18 +41,39 @@ char *find_path(void);
 /* helper function for efficient free */
 void free_buffers(char **buf);
 
+/**
+ * struct builtin - struct for exit cmd.
+ *
+ * @env: accessing enviroment.
+ * @exit: exit cmd.
+ *
+ * Description - structure to..
+ */
 struct builtin
 {
 	char *env;
 	char *exit;
 } builtin;
 
+/**
+ * struct info - exit type
+ * @final_exit: an int which
+ * @ln_count: an int..
+ *
+ * Description - struct.
+ */
 struct info
 {
 	int final_exit;
 	int ln_count;
 } info;
 
+/**
+ * struct flags - struct with bool value
+ * @interactive: tobe added..
+ *
+ * Description - struct that
+ */
 struct flags
 {
 	bool interactive;
